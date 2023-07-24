@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 align="center">Contact Form</h1>
+  <form action="/submit" method="post">
+    <fieldset>
+      <legend>Personal Information</legend>
+    <table cellspacing="9" cellpadding="8">
+      <tr>
+        <td><label>Name :</label></td>
+        <td><input type="text" id="name" name="name" required></td>
+      </tr>
+      <tr>
+        <td><label>Email :</label></td>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+      <tr>
+        <td><label>Phone number :</label></td>
+        <td><input type="number" id="phone" name="phone" required></td>
+      </tr>
+      <tr>
+        <td><label>Address :</label></td>
+        <td><input type="text" id="address" name="address" required></td>
+      </tr>
+    </table>
+</fieldset>
+    <br>
+
+    <fieldset>
+      <legend>Message</legend>
+    <table cellspacing="9" cellpadding="8">
+      <tr>
+        <td><label>Feedback:</label></td>
+        <td><textarea id="message" name="message" required></textarea></td>
+      </tr>
+      <tr>
+        <td><label>Educational status:</label></td>
+        <td>
+          <input type="radio" id="radio1" name="radio" >
+          <label for="radio1">Undergraduate</label><br>
+          <input type="radio" id="radio2" name="radio" >
+          <label for="radio2">Postgraduate</label><br>
+          <input type="radio" id="radio2" name="radio" >
+          <label for="radio2">Doctorate</label><br>
+          <input type="radio" id="radio2" name="radio" >
+          <label for="radio2">High School</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label>How did you hear about us?</label></td>
+        <td>
+          <select id="dropdown" name="dropdown">
+            <option >select</option>
+            <option value="friends">Friends</option>
+            <option value="fb">Facebook</option>
+            <option value="tweet">Twitter</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <br>   
+    <input type="checkbox" id="checkbox" name="checkbox"> All the information i have given is true. 
+     <br>
+    <br>
+    <br>
+    &nbsp;<input type="submit" value="Submit" style="align-items: center;">
+  </fieldset>
+  <br>
+  </form>
+</body>
+</html>
